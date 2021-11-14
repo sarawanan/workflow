@@ -26,6 +26,12 @@ $('initiateMemo').addEventListener('click', () => {
     });
 })
 
+$('resetTimer').addEventListener('click', () => {
+    post('http://localhost:8080/reset-timer').then(response => {
+        document.location.href = 'http://localhost:8080/';
+    });
+})
+
 $('approveMemo').addEventListener('click', () => {
     $('approveMemo').disabled = true;
     $('message').innerText = 'Memo approval has been initiated. Please check the status after some time';

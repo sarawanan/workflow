@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.retry.annotation.Backoff
 import org.springframework.retry.annotation.Recover
 import org.springframework.retry.annotation.Retryable
+import org.springframework.stereotype.Component
 import org.springframework.stereotype.Service
 import org.springframework.web.client.HttpClientErrorException
 import org.springframework.web.client.HttpServerErrorException
@@ -127,4 +128,7 @@ class CommonService @Autowired constructor(
         }
     }
 
+    fun resetTimer() {
+        startTime = LocalDateTime.now();
+    }
 }

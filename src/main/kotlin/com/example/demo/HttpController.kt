@@ -21,4 +21,9 @@ class HttpController @Autowired constructor(
         service.initiateMemo(id)
         return HttpStatus.OK
     }
+
+    @PostMapping("/reset-timer")
+    fun resetTimer() {
+        service.resetTimer()
+    }
 }
