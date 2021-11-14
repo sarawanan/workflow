@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memos</title>
+    <title>Memo</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+<button id="initiateMemo">Initiate Memo</button>
+<button id="approveMemo">Approve Memo</button>
+<h3>Dashboard</h3>
+<h4>(realtime can just pull failed memo(s) here)</h4>
+<table border="1">
+    <tr>
+        <th>Case ID</th>
+        <th>Memo ID</th>
+        <th>Credit Request</th>
+        <th>RAL</th>
+        <th>CAP Flow</th>
+        <th>Work Flow Status</th>
+        <th>Action</th>
+    </tr>
+    {{#memos}}
+    <tr>
+        <td>{{caseId}}</td>
+        <td>{{memoId}}</td>
+        <td>{{crStatus}}</td>
+        <td>{{ralStatus}}</td>
+        <td>{{flowStatus}}</td>
+        <td>{{workflowStatus}}</td>
+        <td align="center">
+            {{^retry}}
+                <img src="/retry.png" id="retry" alt="{{memoId}}"/>
+            {{/retry}}
+        </td>
+    </tr>
+    {{/memos}}
+</table>
+<h4 id="message"></h4>
+</body>
+<script type="module" src="/index.js"></script>
+</html>

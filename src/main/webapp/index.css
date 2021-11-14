@@ -1,0 +1,46 @@
+img {
+    width: 20px;
+    height=20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.id, button, input, text, h4 {
+    font-family: Annai MN;
+    font-size: small;
+}
+h2 {
+    font-family: Annai MN;
+    font-size: large;
+}
+h3 {
+    font-family: Annai MN;
+    font-size: medium;
+}
+h4 {
+    color: red;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+@keyframes example {
+  from {color: blue;}
+  to {color: red;}
+}
+.details {
+    color: blue;
+    cursor: pointer;
+    font-family: Annai MN;
+    font-size: small;
+}
+.hide {
+    display: none;
+}
+th {
+    font-family: Annai MN;
+    font-size: small;
+    color: blue;
+}
+td {
+    font-family: Annai MN;
+    font-size: small;
+}
