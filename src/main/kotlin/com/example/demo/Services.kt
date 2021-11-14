@@ -43,7 +43,7 @@ class CommonService @Autowired constructor(
     val repo: MemoRepo,
     val cr: ExternalService,
     val ral: ExternalService,
-    val flow: ExternalService
+    val flow: ExternalService,
 ) {
     fun getAllMemos() = repo.findAll()
 
@@ -79,6 +79,6 @@ class CommonService @Autowired constructor(
     }
 
     fun resetTimer() {
-        startTime = LocalDateTime.now();
+        startTime = LocalDateTime.now()
     }
 }

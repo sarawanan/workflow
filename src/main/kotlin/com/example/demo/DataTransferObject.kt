@@ -8,5 +8,5 @@ data class WorkflowDto(
     val ralStatus: String,
     val flowStatus: String,
     val workflowStatus: String,
-    val retry: Boolean
+    val retry: Boolean,
 )

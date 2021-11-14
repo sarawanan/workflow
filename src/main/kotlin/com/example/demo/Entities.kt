@@ -19,8 +19,8 @@ data class WorkFlow(
         caseId = this.caseId,
         memoId = this.memoId.toString(),
         process = this.process,
-        crStatus = if (this.crStatus)  "SUCCESS" else "FAILED",
-        ralStatus = if (this.ralStatus)  "SUCCESS" else "FAILED",
+        crStatus = if (this.crStatus) "SUCCESS" else "FAILED",
+        ralStatus = if (this.ralStatus) "SUCCESS" else "FAILED",
         flowStatus = if (this.flowStatus) "SUCCESS" else "FAILED",
         workflowStatus = if (this.workflowStatus) "SUCCESS" else "FAILED",
         retry = this.workflowStatus
