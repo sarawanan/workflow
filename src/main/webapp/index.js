@@ -32,6 +32,10 @@ $('resetTimer').addEventListener('click', () => {
     });
 })
 
+$('refresh').addEventListener('click', () => {
+    location.reload();
+})
+
 $('approveMemo').addEventListener('click', () => {
     $('approveMemo').disabled = true;
     $('message').innerText = 'Memo approval has been initiated. Please check the status after some time';
