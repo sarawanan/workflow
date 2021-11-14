@@ -13,7 +13,7 @@ data class WorkFlow(
     var crStatus: Boolean = false,
     var ralStatus: Boolean = false,
     var flowStatus: Boolean = false,
-    var workflowStatus: Boolean = false,
+    var workflowStatus: Boolean = false
 ) {
     fun toDto() = WorkflowDto(
         caseId = this.caseId,
