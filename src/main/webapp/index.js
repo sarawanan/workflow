@@ -36,14 +36,6 @@ $('refresh').addEventListener('click', () => {
     location.reload();
 })
 
-$('approveMemo').addEventListener('click', () => {
-    $('approveMemo').disabled = true;
-    $('message').innerText = 'Memo approval has been initiated. Please check the status after some time';
-    post('http://localhost:8080/approve').then(response => {
-        document.location.href = 'http://localhost:8080/';
-    });
-})
-
 document.querySelectorAll('#retry').forEach(e => {
     e.addEventListener('click', onClickEvent);
 })
